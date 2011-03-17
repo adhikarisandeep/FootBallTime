@@ -44,8 +44,7 @@
     webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:link]]];	
-    [webview 
-
+    webView.scalesPageToFit = YES;
     
     [self.view addSubview:webView];
 }
